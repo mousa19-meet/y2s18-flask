@@ -4,10 +4,8 @@ app = Flask(__name__)
 
 @app.route('/')
 def home_page():
-	list1 = ["or","orr","orrr"]
-	{% for i in list1 %}
-	{% endfor %}
-	return render_template("index.html")
+	fav_players = ["player1","player2","player3","player45"]
+	return render_template("index.html",likes_same_sports=False,list1=list1)
 
 if __name__ == '__main__':
    app.run(debug = True)

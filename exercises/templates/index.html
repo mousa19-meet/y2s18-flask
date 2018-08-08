@@ -6,8 +6,22 @@
 </head>
 
 <body>
-	<h1>fencing</h1>
-	<p>cause its stupid & fun</p>
-	<h1>noors {{i}} </h1>
+	<div> <!--the header -->
+		<h1>Which Sport Do You Like ?</h1>
+	</div>
+	<div> <!--the if statmetn -->
+		{% if likes_same_sports == True %}
+		<ul>
+			<div> <!-- the for loop-->
+			{% for i in list1%}
+				<li>{{i}}</li>
+			{%endfor%}
+			</div>
+		</ul>	
+		{%else %}
+			<p>that sport sucks</p>
+		{%endif%}
+	</div>	
 </body>
+<!-- ey, i dont remember tables and i dont want to remember/google it so im not gonna do it , dont judge it's 9:35 am and i didn't eat breakfast -->
 </html>
